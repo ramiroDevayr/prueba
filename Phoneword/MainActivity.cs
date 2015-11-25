@@ -72,6 +72,8 @@ namespace Phoneword
             {
                 Toast t = Toast.MakeText(this, "Hola amigo", ToastLength.Long);
                 t.Show();
+                Toast t = Toast.MakeText(this, "Rami puto", ToastLength.Long);
+                t.Show();
                 var intent = new Intent(this, typeof(CallHistoryActivity));
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
