@@ -70,6 +70,8 @@ namespace Phoneword
 
             callHistoryButton.Click += (object sender, EventArgs e) =>
             {
+                Toast t = Toast.MakeText(this, "Hola amigo", ToastLength.Long);
+                t.Show();
                 var intent = new Intent(this, typeof(CallHistoryActivity));
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
