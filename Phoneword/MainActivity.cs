@@ -75,6 +75,7 @@ namespace Phoneword
                 var intent = new Intent(this, typeof(CallHistoryActivity));
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
+                //coomentario para anatole mattei
             };
         }
     }
